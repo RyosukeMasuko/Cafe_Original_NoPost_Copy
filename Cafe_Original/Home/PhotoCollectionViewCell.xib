@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="XQc-oP-Ish" customClass="PhotoCollectionViewCell" customModule="Cafe_Original" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="190" height="190"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="QoS-Xt-Sg8">
+                <rect key="frame" x="0.0" y="0.0" width="190" height="190"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VQJ-0b-m7A">
+                        <rect key="frame" x="0.0" y="0.0" width="190" height="190"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="190" id="WYy-Z3-OQG"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zkN-is-H53">
+                        <rect key="frame" x="16" y="155" width="158" height="27"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="VQJ-0b-m7A" secondAttribute="trailing" id="6wz-aJ-dkF"/>
+                    <constraint firstItem="zkN-is-H53" firstAttribute="top" secondItem="QoS-Xt-Sg8" secondAttribute="top" constant="155" id="9sO-zf-igu"/>
+                    <constraint firstAttribute="trailing" secondItem="zkN-is-H53" secondAttribute="trailing" constant="16" id="Cld-lQ-cyf"/>
+                    <constraint firstAttribute="trailing" secondItem="VQJ-0b-m7A" secondAttribute="trailing" id="KXe-NL-VEY"/>
+                    <constraint firstItem="VQJ-0b-m7A" firstAttribute="leading" secondItem="QoS-Xt-Sg8" secondAttribute="leading" id="Z2c-WG-hbZ"/>
+                    <constraint firstItem="VQJ-0b-m7A" firstAttribute="top" secondItem="QoS-Xt-Sg8" secondAttribute="top" id="ZeO-Sl-fig"/>
+                    <constraint firstItem="VQJ-0b-m7A" firstAttribute="leading" secondItem="QoS-Xt-Sg8" secondAttribute="leading" id="Zg6-aM-BKN"/>
+                    <constraint firstItem="zkN-is-H53" firstAttribute="leading" secondItem="QoS-Xt-Sg8" secondAttribute="leading" constant="16" id="d5O-u1-JwW"/>
+                    <constraint firstAttribute="bottom" secondItem="VQJ-0b-m7A" secondAttribute="bottom" id="h8S-YN-Xb3"/>
+                    <constraint firstItem="VQJ-0b-m7A" firstAttribute="top" secondItem="QoS-Xt-Sg8" secondAttribute="top" id="o84-oj-c8E"/>
+                    <constraint firstAttribute="bottom" secondItem="zkN-is-H53" secondAttribute="bottom" constant="8" id="zJu-mP-pM9"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="190" height="190"/>
+            <connections>
+                <outlet property="nameLabel" destination="zkN-is-H53" id="aSo-xi-ihh"/>
+                <outlet property="photoImageView" destination="VQJ-0b-m7A" id="N66-gc-t5u"/>
+            </connections>
+            <point key="canvasLocation" x="-260.86956521739131" y="67.633928571428569"/>
+        </collectionViewCell>
+    </objects>
+</document>

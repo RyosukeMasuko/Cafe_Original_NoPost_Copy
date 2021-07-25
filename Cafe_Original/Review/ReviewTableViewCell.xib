@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="Cell" rowHeight="108" id="iZL-TO-0av" customClass="ReviewTableViewCell" customModule="Cafe_Original" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="126"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="iZL-TO-0av" id="FD7-lL-nA3">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="126"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Placeholder-human.png" translatesAutoresizingMaskIntoConstraints="NO" id="cR9-Iv-9BC">
+                        <rect key="frame" x="20" y="18" width="45" height="45"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="45" id="9sJ-Lj-3gj"/>
+                            <constraint firstAttribute="height" constant="45" id="MQ1-tf-edk"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qH2-sU-i48">
+                        <rect key="frame" x="73" y="41" width="106" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="0Zg-cW-ucB"/>
+                            <constraint firstAttribute="width" constant="106" id="xYl-Fq-BVh"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fqH-9M-USf">
+                        <rect key="frame" x="73" y="24" width="106" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="30h-NG-69f"/>
+                            <constraint firstAttribute="width" constant="106" id="32s-rQ-UtT"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lkn-Oz-Oha">
+                        <rect key="frame" x="73" y="70" width="321" height="45"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="el5-qO-5XB" customClass="CosmosView" customModule="Cosmos">
+                        <rect key="frame" x="187" y="24" width="207" height="33"/>
+                        <color key="backgroundColor" red="0.94775909185409546" green="0.9805486798286438" blue="0.9815862774848938" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="33" id="bXb-tO-TUf"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="starSize">
+                                <real key="value" value="22"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="filledColor">
+                                <color key="value" red="0.51118147150000004" green="0.81664997220000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="emptyBorderColor">
+                                <color key="value" red="0.0" green="0.99143940210000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="filledBorderColor">
+                                <color key="value" red="0.82847243547439575" green="0.95577269792556763" blue="0.94767314195632935" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" red="0.94775909185409546" green="0.9805486798286438" blue="0.9815862774848938" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstItem="lkn-Oz-Oha" firstAttribute="top" secondItem="qH2-sU-i48" secondAttribute="bottom" constant="13" id="3SD-yH-1LX"/>
+                    <constraint firstItem="lkn-Oz-Oha" firstAttribute="leading" secondItem="FD7-lL-nA3" secondAttribute="leadingMargin" constant="53" id="7EW-vO-KIV"/>
+                    <constraint firstItem="cR9-Iv-9BC" firstAttribute="leading" secondItem="FD7-lL-nA3" secondAttribute="leadingMargin" id="Aop-TD-UMJ"/>
+                    <constraint firstItem="el5-qO-5XB" firstAttribute="top" secondItem="FD7-lL-nA3" secondAttribute="topMargin" constant="13" id="NnZ-oT-dO4"/>
+                    <constraint firstItem="lkn-Oz-Oha" firstAttribute="trailing" secondItem="FD7-lL-nA3" secondAttribute="trailingMargin" id="Rli-UX-TQX"/>
+                    <constraint firstItem="fqH-9M-USf" firstAttribute="top" secondItem="FD7-lL-nA3" secondAttribute="topMargin" constant="13" id="Wez-ZE-MJj"/>
+                    <constraint firstItem="el5-qO-5XB" firstAttribute="trailing" secondItem="FD7-lL-nA3" secondAttribute="trailingMargin" id="Xwc-xb-pkU"/>
+                    <constraint firstItem="cR9-Iv-9BC" firstAttribute="top" secondItem="FD7-lL-nA3" secondAttribute="topMargin" constant="7" id="b1Q-1N-OaF"/>
+                    <constraint firstItem="fqH-9M-USf" firstAttribute="leading" secondItem="cR9-Iv-9BC" secondAttribute="trailing" constant="8" symbolic="YES" id="b76-4U-zyd"/>
+                    <constraint firstItem="qH2-sU-i48" firstAttribute="top" secondItem="fqH-9M-USf" secondAttribute="bottom" constant="1" id="cBh-CM-79n"/>
+                    <constraint firstItem="el5-qO-5XB" firstAttribute="leading" secondItem="qH2-sU-i48" secondAttribute="trailing" constant="8" symbolic="YES" id="eMb-MT-jo0"/>
+                    <constraint firstItem="qH2-sU-i48" firstAttribute="leading" secondItem="cR9-Iv-9BC" secondAttribute="trailing" constant="8" symbolic="YES" id="eNg-Mh-fzJ"/>
+                    <constraint firstItem="lkn-Oz-Oha" firstAttribute="bottom" secondItem="FD7-lL-nA3" secondAttribute="bottomMargin" id="rgN-BS-83p"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="1wD-BD-uiV"/>
+            <connections>
+                <outlet property="reviewCosmosView" destination="el5-qO-5XB" id="wPU-D9-jU6"/>
+                <outlet property="reviewLabel" destination="lkn-Oz-Oha" id="eSI-mR-kQm"/>
+                <outlet property="userIdLabel" destination="fqH-9M-USf" id="lzd-l1-itX"/>
+                <outlet property="userImageView" destination="cR9-Iv-9BC" id="wHX-xa-WRX"/>
+                <outlet property="userNameLabel" destination="qH2-sU-i48" id="YIM-46-q8W"/>
+            </connections>
+            <point key="canvasLocation" x="30" y="-1"/>
+        </tableViewCell>
+    </objects>
+    <designables>
+        <designable name="el5-qO-5XB">
+            <size key="intrinsicContentSize" width="130" height="22"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="Placeholder-human.png" width="1024" height="1024"/>
+    </resources>
+</document>

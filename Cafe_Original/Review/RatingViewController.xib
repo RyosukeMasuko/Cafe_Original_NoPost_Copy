@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RatingViewController" customModule="Cafe_Original" customModuleProvider="target">
+            <connections>
+                <outlet property="cosmosStarRating" destination="5bS-Fa-Qs1" id="9L0-Bi-hUT"/>
+                <outlet property="reviewTextField" destination="y0l-hr-VL8" id="btp-u7-hfp"/>
+                <outlet property="view" destination="ZKL-SU-orR" id="mgZ-AV-dsq"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="ZKL-SU-orR">
+            <rect key="frame" x="0.0" y="0.0" width="290" height="182"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iYt-4Q-FGU">
+                    <rect key="frame" x="0.0" y="0.0" width="300" height="182"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5bS-Fa-Qs1" customClass="CosmosView" customModule="Cosmos">
+                            <rect key="frame" x="54" y="129" width="192" height="38"/>
+                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="38" id="6Ah-eV-CWR"/>
+                                <constraint firstAttribute="width" constant="192" id="Mlo-A9-tlI"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="starSize">
+                                    <real key="value" value="34"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="filledColor">
+                                    <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="emptyBorderColor">
+                                    <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="filledBorderColor">
+                                    <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RATE THIS APP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jTG-Q2-uDa">
+                            <rect key="frame" x="75" y="25" width="138" height="19.5"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="138" id="Sf4-Rm-IML"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                            <color key="textColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is a custom view controller" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dtp-fs-VVs">
+                            <rect key="frame" x="33" y="52.5" width="223" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="ocr-WW-J5n"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Review" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="y0l-hr-VL8">
+                            <rect key="frame" x="51" y="82.5" width="198" height="35.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" red="0.94775909185409546" green="0.9805486798286438" blue="0.9815862774848938" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="Dtp-fs-VVs" firstAttribute="leading" secondItem="iYt-4Q-FGU" secondAttribute="leading" constant="33" id="7lu-X6-39f"/>
+                        <constraint firstItem="y0l-hr-VL8" firstAttribute="centerX" secondItem="iYt-4Q-FGU" secondAttribute="centerX" id="84C-Xw-B31"/>
+                        <constraint firstAttribute="trailing" secondItem="Dtp-fs-VVs" secondAttribute="trailing" constant="44" id="App-aH-jQj"/>
+                        <constraint firstItem="5bS-Fa-Qs1" firstAttribute="top" secondItem="y0l-hr-VL8" secondAttribute="bottom" constant="11" id="FaV-fW-RiM"/>
+                        <constraint firstItem="y0l-hr-VL8" firstAttribute="top" secondItem="5bS-Fa-Qs1" secondAttribute="bottom" id="PSu-lx-qlh"/>
+                        <constraint firstItem="jTG-Q2-uDa" firstAttribute="centerX" secondItem="iYt-4Q-FGU" secondAttribute="centerX" constant="-6" id="d6O-R7-94i"/>
+                        <constraint firstItem="jTG-Q2-uDa" firstAttribute="top" secondItem="iYt-4Q-FGU" secondAttribute="top" constant="25" id="hra-PW-GGV"/>
+                        <constraint firstItem="y0l-hr-VL8" firstAttribute="top" secondItem="Dtp-fs-VVs" secondAttribute="bottom" constant="9" id="pdW-ay-hNc"/>
+                        <constraint firstItem="y0l-hr-VL8" firstAttribute="width" secondItem="iYt-4Q-FGU" secondAttribute="width" multiplier="0.66" id="pzp-Hj-NtH"/>
+                        <constraint firstItem="Dtp-fs-VVs" firstAttribute="top" secondItem="jTG-Q2-uDa" secondAttribute="bottom" constant="8" id="qEV-gB-pKa"/>
+                        <constraint firstAttribute="bottom" secondItem="5bS-Fa-Qs1" secondAttribute="bottom" constant="15" id="qpS-0o-wpz"/>
+                        <constraint firstItem="5bS-Fa-Qs1" firstAttribute="centerX" secondItem="iYt-4Q-FGU" secondAttribute="centerX" id="z5F-cd-e3e"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="PSu-lx-qlh"/>
+                        </mask>
+                    </variation>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="1m4-FT-wo6"/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="iYt-4Q-FGU" secondAttribute="trailing" constant="-10" id="CxZ-d8-6yQ"/>
+                <constraint firstAttribute="bottom" secondItem="iYt-4Q-FGU" secondAttribute="bottom" id="DWN-gU-FYv"/>
+                <constraint firstItem="iYt-4Q-FGU" firstAttribute="top" secondItem="ZKL-SU-orR" secondAttribute="top" id="SOC-21-vql"/>
+                <constraint firstItem="iYt-4Q-FGU" firstAttribute="leading" secondItem="ZKL-SU-orR" secondAttribute="leading" id="nq6-qP-cX3"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="228.98550724637684" y="255.80357142857142"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="5bS-Fa-Qs1">
+            <size key="intrinsicContentSize" width="190" height="34"/>
+        </designable>
+    </designables>
+</document>
